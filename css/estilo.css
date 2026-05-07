@@ -1,0 +1,19 @@
+pre {
+    font-size: 1.2em;
+
+}
+
+.cores-Brasil {
+    color: black; 
+    background-color: red;
+}
+
+.cores-Pelotas {
+    color: blue;
+    background-color: yellow;
+}
+
+.cores-Santos {
+    color: black;
+    background-color: white;
+}
