@@ -114,3 +114,27 @@ getItem(); // buscar
 removeItem(); // remover
 clear(); // limpar tudo
 ```
+
+## Utilizando Bootstrap 
+
+Framework de HTML e CSS que tem a função de facilitar o layout e responsividade. Como facilitar a adaptação para versão mobile. 
+
+melhor local para adicionar: 
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meu Projeto</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <!-- O CSS vem depois do Bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+```

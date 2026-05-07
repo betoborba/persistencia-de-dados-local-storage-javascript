@@ -1,6 +1,17 @@
 pre {
     font-size: 1.2em;
+}
 
+img.normal {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+img.alta {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .cores-Brasil {
@@ -8,7 +19,7 @@ pre {
     background-color: red;
 }
 
-.cores-Pelotas {
+.cores-Barcelona {
     color: blue;
     background-color: yellow;
 }
