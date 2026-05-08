@@ -138,3 +138,21 @@ melhor local para adicionar:
   <link rel="stylesheet" href="css/style.css">
 </head>
 ```
+
+## Remover dados do localStorage
+
+Para realizar a tarefa de remoção é possível utilizando:
+
+
+- `removeItem()` é utilizado para remover conteúdo de uma variável salva no domínio da página o criou. 
+
+- `clear()` remove todas as variáveis pertencentes a um domínio e armazenadas em seu navegador. 
+
+## Uso do querySelectorAll()
+
+Durante todo meu estudo havia usado o método `querySelector()` para manipular os elementos da página HTML. 
+
+O usuo do `querySelectorAll()` acaba sendo mais prático em termos de organização de código. 
+
+O próprio método é alto declarado, ou seja, ele seleciona todos os elementos da página de uma determinada tag ou classe. 
+

@@ -8,23 +8,29 @@ img.normal {
     object-fit: contain;
 }
 
-img.alta {
-    width: 50px;
-    height: 50px;
+.img-clube {
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
+/* Brasil: amarelo, verde, azul e branco */
 .cores-Brasil {
-    color: black; 
-    background-color: red;
+    color: #002776;
+    background-color: #FFDF00;
+    border: 3px solid #009739;
 }
 
+/* Barcelona: azul, grená e dourado */
 .cores-Barcelona {
-    color: blue;
-    background-color: yellow;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #004D98 50%, #A50044 50%);
+    border: 3px solid #EDBB00;
 }
 
+/* Santos: preto e branco */
 .cores-Santos {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
 }
