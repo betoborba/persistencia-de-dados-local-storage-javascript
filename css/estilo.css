@@ -34,3 +34,10 @@ img.normal {
     background-color: #FFFFFF;
     border: 3px solid #000000;
 }
+
+/* Corinthians: preto, branco e vermelho */
+.cores-Corinthians {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 3px solid #DA291C;
+}
