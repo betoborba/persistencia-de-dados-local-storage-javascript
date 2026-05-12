@@ -46,7 +46,7 @@ const verificarClube = () => {
     } else if (clube == "Corinthians") {
         inRadios[3].checked = true
     } else {
-        inRadios[4].checked = true
+        inRadios[4].checked = true   // Se não houver nenhum checado 
     }
 
     trocarClube() // Chama a function que troca a imagem e cores
