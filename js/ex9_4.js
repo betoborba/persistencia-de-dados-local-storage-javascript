@@ -117,7 +117,7 @@ const trocarSigno = () => {
         imSigno.alt = `Símbolo do ${signos[selecao]}` // Texto alternativo 
 
         localStorage.setItem("signo", signos[selecao]) // Salva o signo
-
+        
         // Busca as informações do signo selecionado
         const signoSelecionado = signos[selecao]
         const dados = infoSignos[signoSelecionado]
@@ -136,7 +136,8 @@ const trocarSigno = () => {
         imSigno.alt = "" // Limpa o texto alternativo alt
 
         localStorage.removeItem("signo")
-        localStorage.setItem("signo", signos[selecao])
+        
+        
 
         // Limpa as informações do HTML
         outNome.innerText = ""
@@ -144,26 +145,31 @@ const trocarSigno = () => {
         outCombina.innerText = ""
         outCaracteristicas.innerText = ""
         outPeriodo.innerText = ""
-    }
 
-    for (const radio of inRadios) {
-    radio.addEventListener("change", trocarSigno)
-    
+        
     }
+}
+
+
+for (const radio of inRadios) {
+        radio.addEventListener("change", trocarSigno)
+    }
+        
+    const signoSalvo = localStorage.getItem("signo")
 
     // Recupera o signo salvo quando a página abrir
     if (localStorage.getItem("signo")) {
-        const signoSalvo = localStorage.getItem("signo")
 
         for (let i = 0; i < inRadios.length; i++) {
             if (inRadios[i].value === signoSalvo) {
                 inRadios[i].checked = true
                 trocarSigno()
                 break
-            }
         }
     }
-    
+
 }
+        
+
 
  

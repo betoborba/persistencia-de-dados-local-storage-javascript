@@ -12,12 +12,12 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
         crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <title>Astral JavaScript </title>
 </head>
 <body>
-    <img src="img/ " alt="Astral" class="normal">
+    <img src="img/ " alt="Imagem Astral" class="normal">
     <div class="container-fluid">
         <div class="row" id="divTitulo">
             <div class="col-sm-7">
@@ -25,33 +25,46 @@
             <h2>Receba Previsões para o seu Signo</h2>
         </div>
         
-     <div class="col-sm-3"></p>
+     <div class="col-sm-3">
         <h5>Qual é o seu signo?</h5>
         <form>
         <fieldset>
-        <input type="radio" name="signo" id="Selecione"> Áries <br>
-        <input type="radio" name="signo" id="Selecione"> Touro <br>
-        <input type="radio" name="signo" id="Selecione"> Gêmeos <br>
-        <input type="radio" name="signo" id="Selecione"> Câncer <br>
-        <input type="radio" name="signo" id="Selecione"> Leão <br>
-        <input type="radio" name="signo" id="Selecione"> Virgem <br>
-        <input type="radio" name="signo" id="Selecione"> Libra <br>
-        <input type="radio" name="signo" id="Selecione"> Escorpião <br>
-        <input type="radio" name="signo" id="Selecione"> Sagitário <br>
-        <input type="radio" name="signo" id="Selecione"> Capricórnio <br>
-        <input type="radio" name="signo" id="Selecione"> Aquário <br>
-        <input type="radio" name="signo" id="Selecione"> Peixes <br>
-        <input type="radio" name="clube" id="rbNenhum" checked> Nenhum <br>
+        <input type="radio" value="Áries" name="signo" id="rbAries"> Áries <br>
+        <input type="radio" value="Touro" name="signo" id="rbTouro"> Touro <br>
+        <input type="radio" value="Gêmeos" name="signo" id="rbGemeos"> Gêmeos <br>
+        <input type="radio" value="Câncer" name="signo" id="rbCancer"> Câncer <br>
+        <input type="radio" value="Leão" name="signo" id="rbLeao"> Leão <br>
+        <input type="radio" value="Virgem" name="signo" id="rbVirgem"> Virgem <br>
+        <input type="radio" value="Libra" name="signo" id="rbLibra"> Libra <br>
+        <input type="radio" value="Escorpião" name="signo" id="rbEscorpiao"> Escorpião <br>
+        <input type="radio" value="Sagitário" name="signo" id="rbSagitario"> Sagitário <br>
+        <input type="radio" value="Capricórnio" name="signo" id="rbCapricornio"> Capricórnio <br>
+        <input type="radio" value="Aquário" name="signo" id="rbAquario"> Aquário <br>
+        <input type="radio" value="Peixes" name="signo" id="rbPeixes"> Peixes <br>
+        <input type="radio" value="Nenhum" name="signo" id="rbNenhum" checked> Nenhum <br>
         </fieldset>
+        <button type="button">Salvar no Astral</button>
         </form>
         
      </div>
-    <div class="col-sm-2">
+        <div class="col-sm-2">
         <img id="imgSigno" class="d-none">
      </div>
+     
+     <div id="infoSigno">
+        <h2 id="outNome"></h2>
+        <p id="outElemento"></p>
+        <p id="outCombina"></p>
+        <p id="outCaracteristicas"></p>
+        <p id="outPeriodo"></p>
     </div>
-    </div>
+
     <p id="outMensagem"></p>
+
+    <div class="resultado">
+        <p class="mensagem-signo">Seu signo salvo aparecerá aqui.</p>
+    </div>
+</div>
     <script 
         src="js/ex9_4.js"></script>
 </body>

@@ -1,0 +1,120 @@
+:root {
+    --amarelo-principal: #F7E718;
+    --amarelo-claro: #F8EB2C;
+    --amarelo-envelhecido: #E1D647;
+    --oliva-queimado: #A29931;
+    --marrom-escuro: #635A1A;
+    --preto-envelhecido: #201B09;
+    --branco: #FFFEFE;
+}
+
+body {
+    background-color: var(--amarelo-principal);
+    color: var(--preto-envelhecido);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.container {
+    background-color: var(--amarelo-claro);
+    border: 3px solid var(--preto-envelhecido);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 6px 6px 0 var(--preto-envelhecido);
+}
+
+h1, h2, h3 {
+    color: var(--preto-envelhecido);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--preto-envelhecido);
+}
+
+input,
+select {
+    background-color: var(--branco);
+    color: var(--preto-envelhecido);
+    border: 2px solid var(--preto-envelhecido);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+button {
+    background-color: var(--preto-envelhecido);
+    color: var(--amarelo-principal);
+    border: 2px solid var(--preto-envelhecido);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--marrom-escuro);
+    color: var(--branco);
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: var(--amarelo-envelhecido);
+    border: 2px dashed var(--preto-envelhecido);
+    border-radius: 8px;
+}
+
+.signo-destaque {
+    color: var(--preto-envelhecido);
+    background-color: var(--amarelo-principal);
+    border-bottom: 3px solid var(--preto-envelhecido);
+}
+
+.titulo-astral {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--preto-envelhecido);
+    padding-bottom: 10px;
+}
+
+.mensagem-signo {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: var(--amarelo-claro);
+    border-left: 6px solid var(--preto-envelhecido);
+    padding: 12px;
+}
+
+.resultado {
+    margin-top: 50px;
+    padding-top: 24px;
+    border-top: 3px dotted var(--preto-envelhecido);
+}
+
+.mensagem-signo {
+    background-color: var(--amarelo-claro);
+    border-left: 8px solid var(--preto-envelhecido);
+    padding: 18px;
+    font-size: 1.4rem;
+}
+
+#infoSigno {
+    padding: 24px;
+}
+
+#infoSigno h2 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#infoSigno p {
+    font-size: 1.4rem;
+    border-bottom: 2px dotted var(--preto-envelhecido);
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+}
