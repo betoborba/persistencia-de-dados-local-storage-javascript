@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/ ">
+    <link rel="icon" href="img/logo signo.jpg">
 
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
@@ -17,7 +17,7 @@
     <title>Astral JavaScript </title>
 </head>
 <body>
-    <img src="img/ " alt="Imagem Astral" class="normal">
+    <img src="img/logo signo.jpg" alt="Imagem Astral" class="Imagem-logo">
     <div class="container-fluid">
         <div class="row" id="divTitulo">
             <div class="col-sm-7">
@@ -25,33 +25,59 @@
             <h2>Receba Previsões para o seu Signo</h2>
         </div>
         
-     <div class="col-sm-3">
+     <div class="col-sm-3 painel-signos">
         <h5>Qual é o seu signo?</h5>
         <form>
         <fieldset>
-        <input type="radio" value="Áries" name="signo" id="rbAries"> Áries <br>
-        <input type="radio" value="Touro" name="signo" id="rbTouro"> Touro <br>
-        <input type="radio" value="Gêmeos" name="signo" id="rbGemeos"> Gêmeos <br>
-        <input type="radio" value="Câncer" name="signo" id="rbCancer"> Câncer <br>
-        <input type="radio" value="Leão" name="signo" id="rbLeao"> Leão <br>
-        <input type="radio" value="Virgem" name="signo" id="rbVirgem"> Virgem <br>
-        <input type="radio" value="Libra" name="signo" id="rbLibra"> Libra <br>
-        <input type="radio" value="Escorpião" name="signo" id="rbEscorpiao"> Escorpião <br>
-        <input type="radio" value="Sagitário" name="signo" id="rbSagitario"> Sagitário <br>
-        <input type="radio" value="Capricórnio" name="signo" id="rbCapricornio"> Capricórnio <br>
-        <input type="radio" value="Aquário" name="signo" id="rbAquario"> Aquário <br>
-        <input type="radio" value="Peixes" name="signo" id="rbPeixes"> Peixes <br>
-        <input type="radio" value="Nenhum" name="signo" id="rbNenhum" checked> Nenhum <br>
+        <input type="radio" value="Áries" name="signo" id="rbAries">
+        <label for="rbAries">Áries</label><br>
+
+        <input type="radio" value="Touro" name="signo" id="rbTouro">
+        <label for="rbTouro">Touro</label><br>
+
+        <input type="radio" value="Gêmeos" name="signo" id="rbGemeos">
+        <label for="rbGemeos">Gêmeos</label><br>
+
+        <input type="radio" value="Câncer" name="signo" id="rbCancer">
+        <label for="rbCancer">Câncer</label><br>
+
+        <input type="radio" value="Leão" name="signo" id="rbLeao">
+        <label for="rbLeao">Leão</label><br>
+
+        <input type="radio" value="Virgem" name="signo" id="rbVirgem">
+        <label for="rbVirgem">Virgem</label><br>
+
+        <input type="radio" value="Libra" name="signo" id="rbLibra">
+        <label for="rbLibra">Libra</label><br>
+
+        <input type="radio" value="Escorpião" name="signo" id="rbEscorpiao">
+        <label for="rbEscorpiao">Escorpião</label><br>
+
+        <input type="radio" value="Sagitário" name="signo" id="rbSagitario">
+        <label for="rbSagitario">Sagitário</label><br>
+
+        <input type="radio" value="Capricórnio" name="signo" id="rbCapricornio">
+        <label for="rbCapricornio">Capricórnio</label><br>
+
+        <input type="radio" value="Aquário" name="signo" id="rbAquario">
+        <label for="rbAquario">Aquário</label><br>
+
+        <input type="radio" value="Peixes" name="signo" id="rbPeixes">
+        <label for="rbPeixes">Peixes</label><br>
+
+        <input type="radio" value="Nenhum" name="signo" id="rbNenhum" checked>
+        <label for="rbNenhum">Nenhum</label><br>
         </fieldset>
         <button type="button">Salvar no Astral</button>
         </form>
         
      </div>
         <div class="col-sm-2">
-        <img id="imgSigno" class="d-none">
+        
      </div>
      
      <div id="infoSigno">
+        <img id="imgSigno" class="d-none imagem-signo" alt="Imagem do signo selecionado">
         <h2 id="outNome"></h2>
         <p id="outElemento"></p>
         <p id="outCombina"></p>
@@ -64,6 +90,9 @@
     <div class="resultado">
         <p class="mensagem-signo">Seu signo salvo aparecerá aqui.</p>
     </div>
+    <footer class="rodape">
+    <p>&copy; 2026 Astral JavaScript. Desenvolvido por Roberto Borba.</p>
+</footer>
 </div>
     <script 
         src="js/ex9_4.js"></script>

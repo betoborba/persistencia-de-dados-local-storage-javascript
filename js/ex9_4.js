@@ -7,6 +7,7 @@ const outCombina = document.querySelector("#outCombina")
 const outCaracteristicas = document.querySelector("#outCaracteristicas")
 const outPeriodo = document.querySelector("#outPeriodo")
 
+
 const infoSignos = { // Declara as informaçãoes do signos para exibir no HTML 
     "Áries": {
         elemento: "Fogo",
