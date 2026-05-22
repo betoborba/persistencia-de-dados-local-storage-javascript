@@ -156,3 +156,15 @@ O usuo do `querySelectorAll()` acaba sendo mais prático em termos de organizaç
 
 O próprio método é alto declarado, ou seja, ele seleciona todos os elementos da página de uma determinada tag ou classe. 
 
+## Exercicio localStorage 
+
+- Acrescentar no site da loja de esportes um contador de visita de clientes ao site: 
+
+Assim, na primeira visita do cliente a loja, exibir em um paragrafo do site a mensagem: 
+Muito Bem-vindo! 
+
+Esta é a sua primeira visita ao nosso site!  
+
+Nas próximas visitas, exibir: 
+
+Que bom que você voltou! esta é a sua visita de número X ao nosso site! 
