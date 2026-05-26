@@ -168,3 +168,7 @@ Esta é a sua primeira visita ao nosso site!
 Nas próximas visitas, exibir: 
 
 Que bom que você voltou! esta é a sua visita de número X ao nosso site! 
+
+- Ex. B 
+
+Elaborar um programa para cadastrar produtos em uma lista de compras da semana. Salvar e exibir a listagem dos produtos em ordem alfabética. 

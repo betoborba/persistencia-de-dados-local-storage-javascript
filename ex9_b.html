@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/tapume-construction-roberto-borba.jpg">
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <title>Lista de compras JS </title>
+</head>
+<body>
+    <img src="img/tapume-construction-roberto-borba.jpg" alt="Lista de compras" class="normal">
+    <div class="container-fluid">
+        <div class="row" id="divTitulo">
+            <div class="col-sm-7">
+            <h1> Lista de compras</h1>
+            <h2>Inclua os itens para sua lista </h2>
+        </div>
+        
+     <div class="col-sm-3"></p>
+        <form>
+        <fieldset>
+        <p><label>Nome do produto:</label>
+            <input type="text" id="inNome" class="form-control" required autofocus></p>
+        <p>Preço:
+            <input type="number" id="inPreco" min="0" required class="form-control"></p>
+            <p>
+            <input type="submit" value="Adicionar" class="btn btn-primary"></p>
+            <p>
+            <input type="submit" id="btLista" value="Ver Lista" class="btn btn-primary"></p>
+            <p>
+            <input type="submit" id="btLimpar" value="Limpar Lista" class="btn btn-warning"></p>
+        </p>
+        </fieldset>
+        </form>
+        
+     </div>
+    
+    </div>
+    <pre></pre>
+    <script 
+        src="js/ex9_b.js"></script>
+</body>
+</html>
