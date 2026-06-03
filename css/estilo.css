@@ -6,6 +6,10 @@ img.normal {
     width: 250px;
     height: 250px;
     object-fit: contain;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .img-clube {

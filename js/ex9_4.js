@@ -101,27 +101,27 @@ const trocarSigno = () => {
     let selecao // Seleciona 
 
     // Percorre os inRadios para verificar qual está selecionado
-    for (let i = 0; i < inRadios.length; i++) {
-        if (inRadios[i].checked) {
-            selecao = i // se selecionado, armazena índice do rádio selecionado
+    for (let i = 0; i < inRadios.length; i++) { 
+        if (inRadios[i].checked) { // se o botão radio estiver selecionado
+            selecao = i //  armazena índice do rádio selecionado
             break // Sai da repetição 
         }
     }
 
     if (selecao <= 11 ) { // Se a seleção for <= 11, está dentro da lista de signos
-        dvTitulo.className = `row cores-${signos[selecao]}` // Modifica a cor
+        dvTitulo.className = `row cores-${signos[selecao]}` // Modifica a cor // ainda não implementado 
    
         // Muda a propriedade src com a imagem do signo selecionado
 
-        imSigno.src = `img/${signos[selecao].toLowerCase()}.png`
+        imSigno.src = `img/${signos[selecao].toLowerCase()}.png` // Selecionada da pasta imagens 
         imSigno.className = "img-fluid" // Muda o estilo para exibir a imagem
-        imSigno.alt = `Símbolo do ${signos[selecao]}` // Texto alternativo 
+        imSigno.alt = `Símbolo do ${signos[selecao]}` // Texto alternativo alt text
 
-        localStorage.setItem("signo", signos[selecao]) // Salva o signo
+        localStorage.setItem("signo", signos[selecao]) // Salva o signo 
         
         // Busca as informações do signo selecionado
         const signoSelecionado = signos[selecao]
-        const dados = infoSignos[signoSelecionado]
+        const dados = infoSignos[signoSelecionado]  // dados das descrições dos signos
 
 
         //Exibe as informações no HTML 
@@ -136,7 +136,7 @@ const trocarSigno = () => {
         imSigno.className = "d-none" // Oculta a imagem
         imSigno.alt = "" // Limpa o texto alternativo alt
 
-        localStorage.removeItem("signo")
+        localStorage.removeItem("signo") // Remove do localStorage 
         
         
 
@@ -170,7 +170,13 @@ for (const radio of inRadios) {
     }
 
 }
-        
+// script para deixar a title do html passando da esquerda para direita 
+let titulo = document.title + "" // seleciona o caractere que está na title do html
+
+    setInterval(() => {
+    titulo = titulo.substring(1) + titulo[0]
+    document.title = titulo
+}, 300); // Intervalo de tempo - lento = 500 < rápido
 
 
  

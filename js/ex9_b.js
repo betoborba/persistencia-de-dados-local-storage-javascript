@@ -76,8 +76,8 @@ const mostrarLista = () => {
 
     produtos.sort((a, b) => a.nome.localeCompare(b.nome))
 
-    let linhas = "" // Irá acumular as linhas para serem exibidas 
-
+    let linhas = "" // Irá acumular as linhas para serem exibidas                   
+    
     // Percorre todos os elementos do vetor já ordenado
     for (let i = 0; i < produtos.length; i++) {
         linhas += produtos[i].nome + " -- R$ " + produtos[i].preco.toFixed(2) + "\n"

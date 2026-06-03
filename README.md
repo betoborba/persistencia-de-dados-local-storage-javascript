@@ -115,27 +115,27 @@ removeItem(); // remover
 clear(); // limpar tudo
 ```
 
-## Utilizando Bootstrap 
+## Utilizando Bootstrap
 
-Framework de HTML e CSS que tem a função de facilitar o layout e responsividade. Como facilitar a adaptação para versão mobile. 
+Framework de HTML e CSS que tem a função de facilitar o layout e responsividade. Como facilitar a adaptação para versão mobile.
 
-melhor local para adicionar: 
+melhor local para adicionar:
 
 ```html
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Meu Projeto</title>
 
   <!-- Bootstrap CSS -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
-  >
+  />
 
   <!-- O CSS vem depois do Bootstrap -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 ```
 
@@ -143,32 +143,41 @@ melhor local para adicionar:
 
 Para realizar a tarefa de remoção é possível utilizando:
 
+- `removeItem()` é utilizado para remover conteúdo de uma variável salva no domínio da página o criou.
 
-- `removeItem()` é utilizado para remover conteúdo de uma variável salva no domínio da página o criou. 
-
-- `clear()` remove todas as variáveis pertencentes a um domínio e armazenadas em seu navegador. 
+- `clear()` remove todas as variáveis pertencentes a um domínio e armazenadas em seu navegador.
 
 ## Uso do querySelectorAll()
 
-Durante todo meu estudo havia usado o método `querySelector()` para manipular os elementos da página HTML. 
+Durante todo meu estudo havia usado o método `querySelector()` para manipular os elementos da página HTML.
 
-O usuo do `querySelectorAll()` acaba sendo mais prático em termos de organização de código. 
+O usuo do `querySelectorAll()` acaba sendo mais prático em termos de organização de código.
 
-O próprio método é alto declarado, ou seja, ele seleciona todos os elementos da página de uma determinada tag ou classe. 
+O próprio método é alto declarado, ou seja, ele seleciona todos os elementos da página de uma determinada tag ou classe.
 
-## Exercicio localStorage 
+## Exercicio localStorage
 
-- Acrescentar no site da loja de esportes um contador de visita de clientes ao site: 
+- _Exercicio A_
 
-Assim, na primeira visita do cliente a loja, exibir em um paragrafo do site a mensagem: 
-Muito Bem-vindo! 
+- Acrescentar no site da loja de esportes um contador de visita de clientes ao site:
 
-Esta é a sua primeira visita ao nosso site!  
+Assim, na primeira visita do cliente a loja, exibir em um paragrafo do site a mensagem:
+Muito Bem-vindo!
 
-Nas próximas visitas, exibir: 
+Esta é a sua primeira visita ao nosso site!
 
-Que bom que você voltou! esta é a sua visita de número X ao nosso site! 
+Nas próximas visitas, exibir:
 
-- Ex. B 
+Que bom que você voltou! esta é a sua visita de número X ao nosso site!
 
-Elaborar um programa para cadastrar produtos em uma lista de compras da semana. Salvar e exibir a listagem dos produtos em ordem alfabética. 
+- _Exercicio B_
+
+Elaborar um programa para cadastrar produtos em uma lista de compras da semana. Salvar e exibir a listagem dos produtos em ordem alfabética.
+
+- _Exercicio C_
+
+Elaborar um programa para cadastrar os serviços a serem realizados por um auto center, que organize a ordem dos serviços. Armazenar os serviços no navegador do usuário e a cada clique no botão "Executar Serviço" remover o primeiro serviço e exibi-lo na página. O programa deve atualizar o número de serviços pendentes quando:
+
+- A página for aberta
+- Um serviços for incluido
+- Um Serviço for removido
