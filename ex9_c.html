@@ -24,24 +24,30 @@
             <h1>Concessionária - Controle de Serviços</h1>
         </div>
         
-     <div class="col-sm-3"></p>
-        <form>
-        <fieldset>
-        <p><label>Serviço Veículo:</label>
-            <input type="text" id="inServico" class="form-control" required autofocus></p>
-            <input type="submit" id="btAdservico"value="Adicionar Serviço" class="btn btn-primary"></p>
-            <p>
-            <input type="submit" id="btExservico" value="Executar Serviço" class="btn btn-success"></p>
-            <p>
-            <input type="submit" id="btLimpar" value="Limpar Lista" class="btn btn-warning"></p>
-        </p>
-        </fieldset>
-        </form>
-        
-     </div>
-    
+        <div class="col-sm-3"></p>
+            <form>
+                <fieldset>
+                    <p>
+                        <label for="inProduto">Serviço - Veículo:</label>
+                        <input type="text" id="inServico" class="form-control" required autofocus>
+
+                        <input type="submit" value="Adicionar Serviço" class="btn btn-primary">
+                        <p>
+                        <input type="button" value="Executar Serviço" id="btExecutar" class="btn btn-danger">
+                        <p>
+                        
+                        <h3> Serviços Pendentes:
+                        <span></span>
+                        </h3>
+                        <p class="bg-danger text-white">&nbsp; Serviço em Execução:</p>
+                        <h4></h4>
+                        <input type="submit" id="btLimpar" value="Limpar Lista" class="btn btn-warning"></p>
+                    </p>
+                </fieldset>
+            </form>
+            <pre></pre>
+        </div>
     </div>
-    <pre></pre>
     <script 
         src="js/ex9_c.js"></script>
 </body>
